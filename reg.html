@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>注册页面</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link href="css/demo.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css"  type="text/css"/>
+</head>
+
+<body style="overflow: hidden;">  
+		<div id="header">
+			<div class="header-inner" style="line-height: 18px;">
+				<img src="img/phone-icon.jpg" />
+				<ul>
+				<li ><a href="login.html" style="color:#d93427;">手机客户端</a></li>
+					<li ><a href="reg.html">注册 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</a></li>
+					<li class="li-bg"><a href="login.html">登录</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="width: 100%;margin: auto;height: 100px;">
+			<div id="banner">
+				<ul id="ul2">
+					<li><a style="text-align: center;display: block;width: 66px;" href="index.html">首页</a></li>
+					<li><a href="iWant.html">我要理财</a></li>
+					<li><a href="aboutUs.html">关于我们</a></li>
+					<li class="myMoney"><a href="myTrea.html">我的财富</a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+		</div>
+	<div class="main" style="background: #F2F2F2;">
+    	<div class="wraper" style="background: white;">
+        	<form class="registerform" action="/user/register.sdb" method="post">
+	        	<p class="tr"><a href="login.html" class="blue ml10 fz12" style="margin-top: 25px;margin-right: 20px;">已有账号，立即登录&raquo;</a></p>
+	    		<h3>账号注册</h3>
+	            <table width="100%" style="margin-left: 170px;">
+	            	<tr style="margin-bottom: 200px;">
+	                    <td class="need" style="width:10px;">*</td>
+	                    <td style="width:70px;" class="fz16">手机号：</td>
+	                    <td style="width:205px;"><input type="text" value="" name="mobile" id="mobile" class="inputxt" datatype="m" nullmsg="请输入电话号！" errormsg="请输入电话号！" /></td>
+	                    <td><div class="Validform_checktip"></div></td>
+	               </tr>
+	                <tr>
+	                	<td class="need" style="width: 10px;">*</td>
+	                	<td class="fz16">验证码:</td>
+	                	<td style="width: 262px;"><input type="text" name="authCode" class="inputxt" nullmsg="请输入验证码" id="authCode" style="width: 226px;" datatype="p" /></td>
+	                	<td><input type="button" style="background: #166DCC;"  value="获取验证码" class="getCode" onclick="settime(this)" "/></td>
+	                	<td><div class="Validform_checktip"></div></td>
+	                </tr>
+	                <tr>
+	                    <td class="need" style="width:10px;">*</td>
+	                    <td style="width:80px;" class="fz16">登录密码：</td>
+	                    <td style="width:210px;">
+	                        <input type="password" value="" name="password" class="inputxt" plugin="passwordStrength"  datatype="s6-18" errormsg="密码至少6个字符,最多16个字符！" nullmsg="密码至少6个字符,最多16个字符 " />
+	                    </td>
+	                    <td>
+	                        <div class="Validform_checktip">密码至少6个字符,最多16个字符！</div>
+	                        <div class="passwordStrength" style="display:none;"><b>密码强度：</b> <span>弱</span><span>中</span><span class="last">强</span></div>
+	                    </td>
+	                </tr>
+	                <tr>
+	                	<td class="need"></td>
+	                	<td class="fz16" style="width: 60px;">邀请码:</td>
+	                	<td style="width: 84px;"><input type="text" name="InvitaticCode" class="inputxt" nullmsg="请输入邀请码"  /></td>
+	                </tr>
+	                <tr style="margin-left: 100px;">
+	                	<td ><input type="checkbox" checked="checked" /></td>
+	                	<td style="width: 84px;">我已阅读并同意</td>
+	                	<td><a style="float: none;">《平台协议》</a></td>
+	                </tr>
+	                <tr style="margin-left: 200px;">
+	                    <td class="need"></td>
+	                    <td></td>
+	                    <td colspan="2" style="padding:10px 0 18px 0;">
+	                        <input type="submit" value="提 交" class="btn_sub" style="background: #166DCC;" /> 
+	                    </td>
+	                </tr>
+	            </table>
+        	</form>
+   		</div>
+	</div>
+ <!--底部-->
+	<div class="footer">
+		<div id="wrap-footer" style="min-height: 0;">
+			<div id="footer" style="min-height: 0;">
+				<div class="foot-left">
+					<ul>
+						<li><a href="#">公司介绍  | </a></li>
+						<li><a href="#">平台优势  | </a></li>
+						<li><a href="#">安全保障  | </a></li>
+						<li><a href="#">加入我们  | </a></li>
+						<li><a href="#">联系我们  | </a></li>
+						<li><a href="#">帮助中心</a></li>
+					</ul><br /><br />
+					<p style="color: #868686;font-weight: bold;">© 2016 shendianbao.com, all rights reserved.</p>
+					<p style="color: #e6e6e6;">粤ICP备14030435号-2</p>
+				</div>
+				<div class="foot-right">
+					<img class="img1" src="img/pageHtel.jpg" />
+					<p class="p1" style="margin-top: 0;">客服电话  人工服务时间 9:00～18:00</p>
+					<p class="p2"> 400-830-3603</p>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="js/passwordStrength-min.js"></script>
+<script type="text/javascript">
+$(function(){
+	<!--密码强度-->
+	//$(".registerform").Validform();  //就这一行代码！;
+	$(".registerform").Validform({
+		tiptype:2,
+		usePlugin:{
+			passwordstrength:{
+				minLen:6,//设置密码长度最小值，默认为0;
+				maxLen:16,//设置密码长度最大值，默认为30;
+				trigger:function(obj,error){
+					//该表单元素的keyup和blur事件会触发该函数的执行;
+					//obj:当前表单元素jquery对象;
+					//error:所设密码是否符合验证要求，验证不能通过error为true，验证通过则为false;
+					//console.log(error);
+					if(error){
+						obj.parent().next().find(".Validform_checktip").show();
+						obj.parent().next().find(".passwordStrength").hide();
+					}else{
+						obj.parent().next().find(".Validform_checktip").hide();
+						obj.parent().next().find(".passwordStrength").show();	
+					}
+				}
+			}
+		}
+	});
+
+	<!--获取验证码-->
+	$(".getCode").click(function(){
+		$.ajax({
+			type:"post",
+			url:"/user/getAuthCode.sdb",
+			data:{
+				mobile:mobile,
+				type:0
+			},
+			success:function(data){
+					if(data.state==0){
+						window.location="login.html"
+					}else if(data.state==202){
+						alert("已经注册")
+					}else{
+						alert("手机号码不能为空")
+				}
+			},
+		});
+	})
+	})
+//});		
+<!--按钮倒计时-->
+			var countdown=60; 
+			function settime(obj) { 
+			    if (countdown == 0) { 
+			        obj.removeAttribute("disabled");    
+			        obj.value="再次获取验证码"; 
+			        countdown = 60; 
+			        return;
+			    } else { 
+			        obj.setAttribute("disabled", true); 
+			        <!--obj.css("backgroundCcolor","gray")-->
+			        obj.value="重新发送(" + countdown + ")"; 
+			        countdown--; 
+			    } 
+			setTimeout(function() { 
+			    settime(obj) }
+			    ,1000) 
+			}
+			<!--提交按钮-->
+			$('.btn_sub').click(function(){
+				$.ajax({
+					type:"post",
+					url:"user/register.sdb",
+					data:{
+						mobile:mobile,
+						password:password,
+						authCode:authCode,
+						InvitaticCode:InvitaticCode
+					},
+					success:function(data){
+						if(data.status==0){
+//							window.location="login.html"
+							alert("a")
+						}else{
+							alert("请重新填写注册信息")
+						}
+					}
+				});
+			})
+</script>
+</body>
+</html>
