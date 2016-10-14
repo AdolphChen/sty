@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>标的详情页</title>
 		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/project.css" />
+		<link rel="stylesheet" href="css/project.css" /><script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
 	</head>
 	<body>
 		<!--页头-->
@@ -13,7 +13,7 @@
 				<img src="img/phone-icon.jpg" />
 				<ul>
 					<li ><a href="login.html" style="color:#d93427;">手机客户端</a></li>
-					<li ><a href="reg.html">注册 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</a></li>
+					<li ><a href="reg.html">注册 </a></li>
 					<li class="li-bg"><a href="#">登录</a></li>
 				</ul>
 			</div>
@@ -21,7 +21,7 @@
 		<div style="width: 100%;margin: auto;height:100px;">
 			<div id="banner">
 				<ul id="ul2">
-					<li style="border-bottom: 5px solid red;"><a style="text-align: center;display: block;width: 66px;">首页</a></li>
+					<li ><a style="text-align: center;display: block;width: 66px;">首页</a></li>
 					<li><a href="iWant.html">我要理财</a></li>
 					<li><a href="aboutUs.html">关于我们</a></li>
 					<li class="myMoney"><a href="myTrea.html">我的财富</a></li>
@@ -29,7 +29,7 @@
 				</ul>
 			</div>
 		</div>
-		
+		<!--项目详情-->
 		<div class="project-content-wraper wrape">
 			<h4>您当前的位置:我要理财>项目详情</h4>
 			<div class="project">
@@ -57,22 +57,94 @@
 						<p>加入人次:100元人次</p>
 						<hr style="width: 95%;border: 1px solid #CCC; margin-top: 36px;" />
 					<div class="jkmsg">
-						<span style="margin-left: 30px;">借款人：137****3456</span><span>发起时间 16/10/23 12:56</span><span><img src="img/xieyi-bg.png"/>协议模板</span>	
+						<span style="margin-left: 27px;">借款人：137****3456</span><span>发起时间 &nbsp; 16/10/23 12:56</span><span><img src="img/xieyi-bg.png"/> 协议模板</span>	
 					</div>
 					
 				</div>
-				<div class="project-right">2</div>
+				<div class="project-right">
+					<div class="project-right_div">
+						<p style="margin-top: 20px;">可投金额<i>5000元</i></p>
+						<span class="projectR_span1">满标进度</span><br />
+						<p style="margin-top: -10px;">
+							<span class="projectR_span2"></span><img src="img/pro_right_jdt.png" /><b>62%</b>
+						</p>
+						
+						<p class="projectR_p1"><span>账户余额</span><span>3052.36元</span><a class="a1">充值</a></p>
+						<span class="projectR_span1">购买金额</span>
+						<div class="projectR_div1">
+							<input type="text" value="1000" /><span>元</span>
+						</div>
+						<span class="projectR_span3">预期收益0.5元</span><br />
+						<p><input type="radio" checked="checked" style="margin-left: 14px;"/><span class="projectR_span4">投资满1000元，自动返现13.88元</span></p><br />
+						<button>立即投资</button>
+						<span class="projectR_span5">友情提示：理财非存款，投资需谨慎</span>
+					</div>
+				</div>
 				<div style="clear: both;"></div>
+				
 			</div>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
+		<!--选项卡-->
+					<div class="tab_div">
+						<div id="tabbox">
+					    <ul class="tabs" id="tabs">
+					       <li>借款详情</li>
+					       <li>投标记录</li>
+					       <li>还款计划</li>
+					    </ul>
+					    <ul class="tab_conbox" id="tab_conbox">
+					        <li class="tab_con tab_Po">
+					           <p class="tab_p1">借款人详情</p>
+					           <span class="tab_span1">姓名 <i>欧**</i></span><span class="tab_span2">信用级别 <i style="color: #d93427;">V1</i></span><span>性别 <i>男</i></span><br />
+					           <span class="tab_span1">年龄 <i>28</i></span><span class="tab_span2">学历 <i>大专</i></span><span>婚姻 <i>已婚</i></span>
+					           <p class="tab_p1">资产情况</p>
+					           <span class="tab_span3">工作期限 1~5年</span><span class="tab_span4">房产 <i>全额购房</i></span><span>车产</span><span>无车</span><br />
+					           <span class="tab_span3">年收入 <i>1~5年</i></span><span>净资产</span><span>50W以上</span>
+					           <div class="tab_div2">
+					           	<p class="tab_p3">温馨提示：<br/>1.平台将始终秉持客观公正的原则，严控风险，最大程度的尽力确保借入者信息的真实性，但不保证审核信息100%无误。<br />
+									2.借入者若长期逾期，平台有权将其个人信息将被公布。</p>
+					           </div>
+					           <p class="tab_p1">借款描述</p>
+					           <p class="tab_p4">公司职员，现居吉林省吉林市，从事批发和零售业行业，工作收入稳定，贷款用于资金周转。上述信息已经实地认证方友众信业公司考察认证。同时，
+									经审核借款人所提供资料真实有效，符合借款审核标准。</p>
+					           <p class="tab_p1">风控建议</p>
+					           <p class="tab_p4">借款人信用良好，收入稳定，无不良爱好，三好青年，具备偿还能力，批准在晓风网贷平台公开筹款。</p>
+					           <img src="img/ht.png" />
+					           <p class="tab_p5"><span>债权企业营业执照</span><span>债权企业开户许可</span><span>债权企业营业执照</span><span>债权企业开户许可</span><span>基础合同交易首页</span></p>
+					        </li>
+					            
+					        <li class="tab_con">
+					        	<p class="tab_p6"><span>投标人</span></spn><span>投标金额</span><span>投标时间</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>3分钟前</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>一周前</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>一个月前</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>一年前</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>一个世纪前</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>上辈子</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>投标时间</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>投标时间</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>投标时间</span></p>
+					        	<p class="tab_p7"><span>136****1234</span></spn><span>2000元</span><span>投标时间</span></p>
+					        	<a style="float: none;text-align: center;margin-left: 50%;">点击加载更多 ></a>
+					        </li>
+					    
+					        <li class="tab_con">
+					        	<p class="tab_p8"><span>期数</span></spn><span>汇款时间</span><span>本息合计</span><span>状态</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>750.00元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>1000.00元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>20000.00元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>22222.22元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>300000.00元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>3/3</span></spn><span>16/11/26</span><span>1111.11元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>251.52元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>3/3</span></spn><span>16/11/26</span><span>111.11元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>1/3</span></spn><span>16/11/26</span><span>666.00元</span><span>未还</span></p>
+					        	<p class="tab_p9"><span>3/3</span></spn><span>16/11/26</span><span>789.00元</span><span>未还</span></p>
+					        	<a style="float: none;text-align: center;margin-left: 50%;">点击加载更多 ></a>
+					        </li>
+					    </ul>
+					</div>
+					</div>
 		
 		
 		
@@ -100,5 +172,6 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/project.js" ></script>
 	</body>
 </html>
